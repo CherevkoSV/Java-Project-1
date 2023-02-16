@@ -8,9 +8,9 @@ public class Task3_ex2 {
     public static final double PERCENT_PER_BONUS = 0.4;
 
     public static void main(String[] args) {
-        double price = Double.parseDouble(args[0]);
 
         int quantity = getQuantity("Зазначте кількість товару: ");
+        double price = getPrice("Зазначте ціну за одиницю товару: ");
 
         StringBuilder builder = new StringBuilder("Загальна інформація: ");
 
@@ -56,6 +56,11 @@ public class Task3_ex2 {
     private static int getQuantity(String title) {
         System.out.println(title);
         return SCANNER.nextInt();
+    }
+
+    private static double getPrice(String title) {
+        System.out.println(title);
+        return SCANNER.nextDouble();
     }
 
     private static void appendPrice(StringBuilder builder, double price) {
