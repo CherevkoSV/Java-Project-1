@@ -29,19 +29,9 @@ public class Task3_ex3 {
 
         double procent = getProcent("Введіть відсоток податку: ");
 
-        StringBuilder builder = new StringBuilder("Загальна інформація: ");
+        StringBuilder builder = new StringBuilder("Загальна інформація! ");
 
         countSalery(builder, month, hourRate, procent);
-
-//        appendMonth(builder, month);
-//
-//        appendHourRate(builder, hourRate);
-//
-//        appendProcent(builder, procent);
-//
-//        appendSalery(builder, procent);
-//
-//        appendSaleryProcent(builder, procent);
 
         System.out.println(builder);
     }
@@ -52,9 +42,10 @@ public class Task3_ex3 {
         double saleryWithoutProcent = workDays * 8 * hourRate;
         double saleryWithProcent = saleryWithoutProcent - (saleryWithoutProcent / 100d * procent);
 
-        builder.append(month.name +"\n");
+        builder.append("\n" + "За місяць " + month.name + ":");
+        builder.append("\n" + "- з урахованням податку " + procent +"%" + " сума становить = " );
         builder.append(saleryWithProcent);
-        builder.append("\n");
+        builder.append("\n" + "- без податку" + " сума становить = " );
         builder.append(saleryWithoutProcent);
     }
 
