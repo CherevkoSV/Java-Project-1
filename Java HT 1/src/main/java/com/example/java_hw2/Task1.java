@@ -1,4 +1,4 @@
-package com.example.javaht1;
+package com.example.java_hw2;
 import static java.lang.Math.pow;
 
 public class Task1 {

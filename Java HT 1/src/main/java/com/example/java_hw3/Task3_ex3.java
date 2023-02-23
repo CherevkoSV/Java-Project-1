@@ -1,4 +1,4 @@
-package com.example.javaht3.javaht1;
+package com.example.java_hw3;
 
 import java.util.HashMap;
 import java.util.Scanner;

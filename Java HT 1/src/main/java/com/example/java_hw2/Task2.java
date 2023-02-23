@@ -1,4 +1,4 @@
-package com.example.javaht1;
+package com.example.java_hw2;
 
 public class Task2 {
     public static final int WEEK_IN_MONTH = 4;
