@@ -18,11 +18,11 @@ public class ProductFactory {
         return new NonFoodProduct(productionDateTime, warrantyPeriod);
     }
 
-    public static void printProductStats() {
+/*    public static void printProductStats() {
         System.out.println("Total products: " + totalProducts);
         System.out.println("Total food products: " + totalFoodProducts);
         System.out.println("Total non-food products: " + totalNonFoodProducts);
-    }
+    }*/
 
     public static int getTotalProducts() {
         return totalProducts;

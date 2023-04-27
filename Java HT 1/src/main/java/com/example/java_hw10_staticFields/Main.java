@@ -25,5 +25,11 @@ public class Main {
         System.out.println("Фабрика виготовила " + ProductFactory.getTotalNonFoodProducts() + " непродуктових товарів");
         System.out.println("Загалом створено, " + (ProductFactory.getTotalFoodProducts() + numFoodProducts) + " продуктових товарів");
         System.out.println("Загалом створено, " + (ProductFactory.getTotalNonFoodProducts() + numNonFoodProducts) + " непродуктових товарів");
+
+        printProductStats();
+    }
+
+    public static void printProductStats() {
+        System.out.println("Всього продуктів: " + ProductFactory.getTotalProducts());
     }
 }
